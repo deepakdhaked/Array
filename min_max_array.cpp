@@ -2,7 +2,7 @@
 #include<limits.h>
 using namespace std;
 
-int getMax(int arr[], int size){
+int getMax(int arr[], unsigned int size){
     int max = INT_MIN;
 
     for (int i = 0; i < size; i++)
@@ -12,7 +12,7 @@ int getMax(int arr[], int size){
     return max;
 }
 
-int getMin(int arr[], int size)
+int getMin(int arr[], unsigned int size)
 {
     int min = INT_MAX;
 
