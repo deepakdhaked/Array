@@ -20,6 +20,15 @@ void reverseArr(int arr[], int size){
     }
 }
 
+void reverseArr2(int arr[], int size){
+    int start = 0, end = size - 1;
+
+    while (start<=end)
+    {
+        swap(arr[start++], arr[end--]);
+    }
+}
+
 int main(){
     int arr[10000];
     int size;
@@ -31,6 +40,10 @@ int main(){
     }
 
     reverseArr(arr, size);
+    printArr(arr, size);
 
+    cout << '\n';
+
+    reverseArr2(arr, size);
     printArr(arr, size);
 }
